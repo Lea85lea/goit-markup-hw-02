@@ -1,25 +1,15 @@
-/* Общие стили */
-* {
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
 }
 
 /* Container */
@@ -29,193 +19,41 @@ ul {
     padding: 0 15px;
 }
 
+/* Header */
+.header {
+    background-color: #2e2f42;
+    padding: 1rem 0;
+    color: #f4f4fd;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+}
+
+.logo-highlight {
+    color: #f4f4fd;
+}
+
 /* Features Section */
 .features {
-    padding: 3rem 1rem;
-    background-color: #f4f4f4;
+    background-color: #F4F4FD;
+    padding: 3rem 0;
 }
 
 .features-list {
     display: flex;
     justify-content: space-between;
-    /* Равномерное распределение блоков */
-    align-items: center;
-    /* Вертикальное выравнивание */
-    flex-wrap: nowrap;
-    /* Без переноса строк */
-    gap: 0;
-    /* Убираем промежутки между блоками */
-    width: 1128px;
-    /* Общая ширина секции */
-    height: 104px;
-    /* Общая высота секции */
-    margin: 0 auto;
-    /* Центрирование секции */
-}
-
-.feature-item {
-    width: 264px;
-    /* Ширина каждого блока */
-    height: 104px;
-    /* Высота каждого блока */
-    text-align: center;
-    /* Центрирование текста */
-    background-color: #fff;
-    /* Белый фон блока */
-    border-radius: 8px;
-    /* Скруглённые углы */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Лёгкая тень */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* Центрирование контента по вертикали */
-    align-items: center;
-    /* Центрирование контента по горизонтали */
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-    /* Эффект при наведении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.feature-title {
-    font-size: 1rem;
-    /* Размер текста заголовка */
-    font-weight: 700;
-    /* Толщина шрифта */
-    margin-bottom: 0.5rem;
-}
-
-.feature-text {
-    font-size: 0.875rem;
-    /* Размер текста */
-    color: #555;
-}
-
-/* Team Section */
-.team {
-    padding: 3rem 1rem;
-    background-color: #fff;
-}
-
-.team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
-}
-
-.team-member {
-    flex: 1 1 calc(25% - 2rem);
-    max-width: 264px;
-    text-align: center;
-}
-
-.team-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.team-name {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.team-role {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Portfolio Section */
-.portfolio {
-    padding: 3rem 1rem;
-    background-color: #f4f4f4;
-}
-
-.portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.portfolio-item {
-    text-align: center;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.portfolio-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.portfolio-description {
-    font-size: 1rem;
-    color: #666;
+    gap: 1rem;
 }
 
 /* Footer */
 .footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
+    background-color: #2e2f42;
     padding: 1rem 0;
-}
-
-/* Dark Background Section */
-.dark-bg {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 4rem 1rem;
-}
-
-.dark-bg .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #fff;
-}
-
-.dark-bg .dark-bg-text {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    color: #ccc;
-}
-
-.dark-bg .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dark-bg .btn-primary:hover {
-    background-color: #0056b3;
-}
-
-/* Общие стили для заголовков H2 */
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #333;
+    color: #f4f4fd;
 }

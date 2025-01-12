@@ -2,108 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WebStudio - Digital Marketing & Growth Solutions">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WebStudio - Digital Marketing & Growth Solutions" />
     <title>WebStudio</title>
-    <!-- Normalize -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+
+    <!-- Подключение Google шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-    <!-- Styles -->
+
+    <!-- Подключение файла стилей -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="./index.html" class="logo">Web<span class="logo-highlight">Studio</span></a>
-                <ul class="nav-list">
-                    <li><a href="./index.html" class="nav-link">Home</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                </ul>
-            </nav>
-            <address class="contacts">
-                <ul>
-                    <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
-                    <li><a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
-        </div>
+    <header>
+        <nav>
+            <!-- Логотип -->
+            <a href="./index.html" class="logo">
+                Web<span class="logo-text">Studio</span>
+            </a>
+
+            <!-- Меню -->
+            <ul>
+                <li><a href="./index.html" class="nav-link">Studio</a></li>
+                <li><a href="#" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контакты -->
+        <address class="contact-info">
+            <ul>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+        </address>
     </header>
 
-    <!-- Section 1 -->
-    <section class="section dark-bg">
-        <div class="container">
-            <h2 class="section-title">Effective Solutions for Your Business</h2>
-            <button type="button" class="btn btn-primary">Order Service</button>
-        </div>
-    </section>
+    <!-- Main -->
+    <main>
+        <!-- Секция №1 -->
+        <section class="first-section">
+            <h1 class="first-section-title">Effective Solutions for Your Business</h1>
+            <button type="button" class="first-section-button">Order Service</button>
+        </section>
 
-    <!-- Section 2 -->
-    <section class="section features">
-        <div class="container">
-            <h2 class="section-title">Our Features</h2>
-            <ul class="features-list">
-                <li class="feature-item">
+        <!-- Секция №2 -->
+        <section class="features-section">
+            <ul>
+                <li>
                     <h3 class="feature-title">Strategy</h3>
-                    <p class="feature-text">Our goal is to identify the business problem to walk away with the perfect
-                        and creative solution.</p>
+                    <p class="feature-description">Our goal is to identify the business problem to walk away with the
+                        perfect and creative solution.
+                    </p>
                 </li>
-                <li class="feature-item">
+                <li>
                     <h3 class="feature-title">Punctuality</h3>
-                    <p class="feature-text">Bring the key message to the brand's audience for the best price within the
-                        shortest possible time.</p>
+                    <p class="feature-description">Bring the key message to the brand's audience for the best price
+                        within the shortest possible
+                        time.</p>
                 </li>
-                <li class="feature-item">
+                <li>
                     <h3 class="feature-title">Diligence</h3>
-                    <p class="feature-text">Research and confirm brands that present the strongest digital growth
-                        opportunities and minimize risk.</p>
+                    <p class="feature-description">Research and confirm brands that present the strongest digital growth
+                        opportunities and minimize
+                        risk.</p>
                 </li>
-                <li class="feature-item">
+                <li>
                     <h3 class="feature-title">Technologies</h3>
-                    <p class="feature-text">Design practice focused on digital experiences. We bring forth a deep
-                        passion for problem-solving.</p>
+                    <p class="feature-description">Design practice focused on digital experiences. We bring forth a deep
+                        passion for
+                        problem-solving.</p>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section 3 -->
-    <section class="section portfolio">
-        <div class="container">
-            <h2 class="section-title">Our Portfolio</h2>
-            <ul class="portfolio-list">
-                <li class="portfolio-item">
-                    <img src="./images/project1.jpg" alt="Project 1" width="360">
-                    <h3 class="portfolio-title">Banking App</h3>
-                    <p class="portfolio-description">App</p>
+        <!-- Секция №3 -->
+        <section class="team-section">
+            <h2 class="team-section-title">Our Team</h2>
+            <ul>
+                <li class="team-member">
+                    <img src="./images/mark-guerrero.jpg" alt="Portrait of Mark Guerrero, Product Designer"
+                        width="264" />
+                    <h3 class="team-member-title">Mark Guerrero</h3>
+                    <p class="team-member-description">Product Designer</p>
                 </li>
-                <li class="portfolio-item">
-                    <img src="./images/project2.jpg" alt="Project 2" width="360">
-                    <h3 class="portfolio-title">Cashless Payment</h3>
-                    <p class="portfolio-description">Marketing</p>
+                <li class="team-member">
+                    <img src="./images/tom-ford.jpg" alt="Portrait of Tom Ford, Frontend Developer" width="264" />
+                    <h3 class="team-member-title">Tom Ford</h3>
+                    <p class="team-member-description">Frontend Developer</p>
                 </li>
-                <li class="portfolio-item">
-                    <img src="./images/project3.jpg" alt="Project 3" width="360">
-                    <h3 class="portfolio-title">Meditation App</h3>
-                    <p class="portfolio-description">App</p>
+                <li class="team-member">
+                    <img src="./images/camila-garcia.jpg" alt="Portrait of Camila Garcia, Marketing Specialist"
+                        width="264" />
+                    <h3 class="team-member-title">Camila Garcia</h3>
+                    <p class="team-member-description">Marketing</p>
+                </li>
+                <li class="team-member">
+                    <img src="./images/daniel-wilson.jpg" alt="Portrait of Daniel Wilson, UI Designer" width="264" />
+                    <h3 class="team-member-title">Daniel Wilson</h3>
+                    <p class="team-member-description">UI Designer</p>
                 </li>
             </ul>
-        </div>
-    </section>
+        </section>
+
+        <!-- Секция №4 -->
+        <section class="projects-section">
+            <h2 class="projects-section-title">Our Projects</h2>
+            <ul>
+                <li class="project-item">
+                    <img src="./images/banking-app.jpg" alt="Banking App Project" width="360" />
+                    <h3 class="project-item-title">Banking App</h3>
+                    <p class="project-item-description">App</p>
+                </li>
+                <li class="project-item">
+                    <img src="./images/cashless-payment.jpg" alt="Cashless Payment Project" width="360" />
+                    <h3 class="project-item-title">Cashless Payment</h3>
+                    <p class="project-item-description">Marketing</p>
+                </li>
+                <li class="project-item">
+                    <img src="./images/meditation-app.jpg" alt="Meditation App Project" width="360" />
+                    <h3 class="project-item-title">Meditation App</h3>
+                    <p class="project-item-description">App</p>
+                </li>
+                <li class="project-item">
+                    <img src="./images/taxi-service.jpg" alt="Taxi Service Project" width="360" />
+                    <h3 class="project-item-title">Taxi Service</h3>
+                    <p class="project-item-description">Marketing</p>
+                </li>
+                <li class="project-item">
+                    <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations Project" width="360" />
+                    <h3 class="project-item-title">Screen Illustrations</h3>
+                    <p class="project-item-description">Design</p>
+                </li>
+                <li class="project-item">
+                    <img src="./images/online-courses.jpg" alt="Online Courses Project" width="360" />
+                    <h3 class="project-item-title">Online Courses</h3>
+                    <p class="project-item-description">Marketing</p>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="footer-logo">Web<span class="footer-logo-highlight">Studio</span></a>
-            <p class="footer-text">Boost your projects with creative solutions.</p>
-        </div>
+    <footer class="site-footer">
+        <!-- Логотип -->
+        <a href="./index.html" class="logo">
+            Web<span class="logo-text">Studio</span>
+        </a>
+
+        <!-- Параграф -->
+        <p class="footer-description">
+            Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+        </p>
     </footer>
 </body>
 

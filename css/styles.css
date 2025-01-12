@@ -85,7 +85,6 @@ header {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 5px;
 }
 
 .first-section-button:hover,
@@ -96,6 +95,25 @@ header {
 /* Вторая секция */
 .features-section {
     padding: 50px 20px;
+}
+
+.features-section-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-transform: capitalize;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.feature-item {
+    margin-bottom: 20px;
 }
 
 .feature-title {
@@ -129,7 +147,11 @@ header {
 }
 
 .team-member {
+    background-color: #FFFFFF;
     margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .team-member-title {

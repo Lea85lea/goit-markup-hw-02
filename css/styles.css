@@ -211,8 +211,9 @@ header {
 }
 
 .footer-description {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--footer-color, #F4F4FD);
+.footer-description {
+        line-height: 1.5;
+        color: var(--footer-color, #F4F4FD);
+        letter-spacing: 0.02em;
+    }
 }

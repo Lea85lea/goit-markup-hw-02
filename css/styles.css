@@ -1,46 +1,68 @@
 /* Нормализация */
 @import url('https://unpkg.com/modern-normalize/modern-normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
 /* Общие стили */
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    line-height: 1.5;
+    padding: 0;
+    background-color: #fff;
+    color: #2e2f42;
 }
 
-/* Логотип */
+/* Хедер */
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #4d5ae5;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .logo {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
 }
 
-.logo-text {
+.logo-highlight {
     color: #2e2f42;
 }
 
-/* Хедер */
-header {
-    background-color: #2e2f42;
-    padding: 20px;
+.nav {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    font-weight: 500;
     text-decoration: none;
-    margin-right: 15px;
+    color: #2e2f42;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
@@ -49,12 +71,18 @@ header {
 }
 
 /* Контакты */
+.header-contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
 .contact-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 14px;
     color: #434455;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .contact-link:hover,
@@ -62,158 +90,183 @@ header {
     color: #404bbf;
 }
 
-/* Первая секция */
-.first-section {
+/* Hero Section */
+.hero {
     background-color: #2e2f42;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
-.first-section-title {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-
-.first-section-button {
-    background-color: #4d5ae5;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-}
-
-.first-section-button:hover,
-.first-section-button:focus {
-    background-color: #404bbf;
-}
-
-/* Вторая секция */
-.features-section {
-    padding: 50px 20px;
-}
-
-.features-section-title {
-    text-align: center;
-    font-size: 36px;
+.hero-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-transform: capitalize;
-}
-
-.features-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.feature-item {
     margin-bottom: 20px;
 }
 
-.feature-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.feature-description {
+.hero-button {
+    background-color: #4d5ae5;
+    color: #ffffff;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Третья секция */
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1128px;
+    gap: 32px;
+}
+
+.feature {
+    width: 264px;
+    height: 104px;
+    background-color: #f4f4fd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    padding: 16px;
+}
+
+/* Team Section */
 .team-section {
-    background-color: #F4F4FD;
+    background-color: #f4f4fd;
     padding: 50px 20px;
-    text-align: center;
+    margin-top: 40px;
 }
 
-.team-section-title {
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.team-card {
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 264px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+/* Portfolio Section */
+/* Portfolio Section */
+.portfolio-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    width: 1128px;
+    margin: 0 auto;
+}
+
+.portfolio-title {
     font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-member {
-    background-color: #FFFFFF;
-    margin: 20px 0;
-    padding: 20px;
+    font-weight: 700;
     text-align: center;
-}
-
-.team-member-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 32px;
 }
 
-.team-member-description {
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Размещает 3 карточки в строке */
+    gap: 32px;
+    /* Расстояние между карточками */
+}
+
+.project-card {
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.project-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.project-card-description {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
 }
 
-/* Четвертая секция */
-.projects-section {
-    padding: 50px 20px;
-}
-
-.projects-section-title {
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    color: #2e2f42;
-}
-
-.project-item {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.project-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.project-item-description {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* Футер */
-.site-footer {
+/* Footer */
+footer {
     background-color: #2e2f42;
-    padding: 20px;
-    text-align: center;
+    color: #f4f4fd;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-.footer-description {
-.footer-description {
-        line-height: 1.5;
-        color: var(--footer-color, #F4F4FD);
-        letter-spacing: 0.02em;
-    }
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-container .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+}
+
+.footer-container .logo-highlight {
+    color: #f4f4fd;
+}
+
+.footer-container .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0;
+    color: #f4f4fd;
 }

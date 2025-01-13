@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Подключение шрифтов -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Хедер -->
     <header class="header">
         <div class="header-container">
             <a href="./index.html" class="logo">Web<span class="logo-highlight">Studio</span></a>
-            <nav>
+            <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="./index.html" class="nav-link">Home</a></li>
                     <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
@@ -33,76 +33,80 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Секция 1 -->
     <section class="hero">
-        <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-        <button class="hero-button">Order Service</button>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="features-container">
-            <div class="feature-item">
-                <h3 class="feature-title">Strategy</h3>
-                <p class="feature-description">Identify the business problem and find the perfect solution.</p>
-            </div>
-            <div class="feature-item">
-                <h3 class="feature-title">Punctuality</h3>
-                <p class="feature-description">Deliver key messages on time with maximum efficiency.</p>
-            </div>
-            <div class="feature-item">
-                <h3 class="feature-title">Diligence</h3>
-                <p class="feature-description">Research and confirm the best growth opportunities.</p>
-            </div>
-            <div class="feature-item">
-                <h3 class="feature-title">Technologies</h3>
-                <p class="feature-description">Focus on digital experiences and problem-solving.</p>
-            </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
+            <button class="hero-button">Order Service</button>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Секция 2 -->
+    <section class="features-section">
+        <ul class="features-list">
+            <li class="feature-item">
+                <h3 class="feature-title">Strategy</h3>
+                <p class="feature-description">Our goal is to identify the business problem and find the perfect
+                    solution.</p>
+            </li>
+            <li class="feature-item">
+                <h3 class="feature-title">Punctuality</h3>
+                <p class="feature-description">Bring the key message to the brand's audience within the shortest time.
+                </p>
+            </li>
+            <li class="feature-item">
+                <h3 class="feature-title">Diligence</h3>
+                <p class="feature-description">Research and confirm the best opportunities for growth.</p>
+            </li>
+            <li class="feature-item">
+                <h3 class="feature-title">Technologies</h3>
+                <p class="feature-description">Design practice focused on digital problem-solving.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Секция 3 -->
     <section class="portfolio-section" id="portfolio">
         <h2 class="portfolio-title">Our Projects</h2>
-        <div class="portfolio-container">
-            <div class="project-card">
-                <img src="./images/banking-app.jpg" alt="Banking App" width="360">
+        <ul class="portfolio-container">
+            <li class="project-card">
+                <img src="./images/banking-app.jpg" alt="Banking App Project" width="360">
                 <h3 class="project-card-title">Banking App</h3>
                 <p class="project-card-description">App</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/cashless-payment.jpg" alt="Cashless Payment" width="360">
+            </li>
+            <li class="project-card">
+                <img src="./images/cashless-payment.jpg" alt="Cashless Payment Project" width="360">
                 <h3 class="project-card-title">Cashless Payment</h3>
                 <p class="project-card-description">Marketing</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/meditation-app.jpg" alt="Meditation App" width="360">
+            </li>
+            <li class="project-card">
+                <img src="./images/meditation-app.jpg" alt="Meditation App Project" width="360">
                 <h3 class="project-card-title">Meditation App</h3>
                 <p class="project-card-description">App</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service" width="360">
+            </li>
+            <li class="project-card">
+                <img src="./images/taxi-service.jpg" alt="Taxi Service Project" width="360">
                 <h3 class="project-card-title">Taxi Service</h3>
                 <p class="project-card-description">Marketing</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations" width="360">
+            </li>
+            <li class="project-card">
+                <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations Project" width="360">
                 <h3 class="project-card-title">Screen Illustrations</h3>
                 <p class="project-card-description">Design</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/online-courses.jpg" alt="Online Courses" width="360">
+            </li>
+            <li class="project-card">
+                <img src="./images/online-courses.jpg" alt="Online Courses Project" width="360">
                 <h3 class="project-card-title">Online Courses</h3>
                 <p class="project-card-description">Marketing</p>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Футер -->
+    <footer class="footer">
         <div class="footer-container">
             <a href="./index.html" class="logo">Web<span class="logo-highlight">Studio</span></a>
-            <p class="footer-text">© 2025 WebStudio. All Rights Reserved.</p>
+            <p class="footer-text">&copy; 2025 WebStudio. All Rights Reserved.</p>
         </div>
     </footer>
 </body>

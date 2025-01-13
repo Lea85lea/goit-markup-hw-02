@@ -3,12 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
 /* Общие стили */
+/* Общие стили */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color: #2e2f42;
+    color: #434455;
 }
 
 /* Хедер */
@@ -31,9 +32,11 @@ body {
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
@@ -43,14 +46,10 @@ body {
     color: #2e2f42;
 }
 
-.nav {
-    flex: 1;
-    text-align: center;
-}
-
 .nav-list {
     display: flex;
     justify-content: center;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -59,9 +58,10 @@ body {
 .nav-link {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: #2e2f42;
-    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
@@ -71,17 +71,24 @@ body {
 }
 
 /* Контакты */
-.header-contacts {
+.contact-info {
+    font-style: normal;
+}
+
+.contact-list {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 30px;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-link {
-    font-size: 14px;
-    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-decoration: none;
+    color: #434455;
     transition: color 0.3s ease;
 }
 
@@ -89,7 +96,6 @@ body {
 .contact-link:focus {
     color: #404bbf;
 }
-
 /* Hero Section */
 .hero {
     background-color: #2e2f42;
@@ -130,33 +136,32 @@ body {
 /* Features Section */
 .features-section {
     background-color: #ffffff;
-    padding: 50px 20px;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }
 
 .features-container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     width: 1128px;
-    gap: 32px;
+    justify-content: space-between;
 }
 
 .feature {
     width: 264px;
     height: 104px;
-    background-color: #f4f4fd;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
     text-align: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
     padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Team Section */
 .team-section {
     background-color: #f4f4fd;
     padding: 50px 20px;
-    margin-top: 40px;
 }
 
 .team-container {
@@ -166,43 +171,42 @@ body {
 }
 
 .team-card {
-    background-color: #ffffff;
-    border-radius: 4px;
     width: 264px;
+    background-color: #ffffff;
     text-align: center;
     padding: 16px;
+    border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.team-card-img {
+.team-card img {
     width: 100%;
     border-radius: 4px;
     margin-bottom: 16px;
 }
 
-/* Portfolio Section */
+.team-card-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-card-role {
+    font-size: 16px;
+    font-weight: 400;
+    color: #434455;
+}
+
 /* Portfolio Section */
 .portfolio-section {
     background-color: #ffffff;
     padding: 50px 20px;
-    width: 1128px;
-    margin: 0 auto;
-}
-
-.portfolio-title {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 32px;
-}
-
-.portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Размещает 3 карточки в строке */
     gap: 32px;
-    /* Расстояние между карточками */
+    max-width: 1128px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -236,37 +240,24 @@ footer {
     background-color: #2e2f42;
     color: #f4f4fd;
     padding: 20px 0;
-    margin-top: 40px;
+    text-align: center;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 10px;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .footer-container .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
-}
-
-.footer-container .logo-highlight {
-    color: #f4f4fd;
 }
 
 .footer-container .footer-text {
     font-size: 16px;
     line-height: 1.5;
     max-width: 800px;
-    margin: 0;
-    color: #f4f4fd;
 }

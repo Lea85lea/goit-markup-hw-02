@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <!-- Логотип -->
-            <a href="./index.html" class="logo">
-                Web<span class="logo-highlight">Studio</span>
-            </a>
-            <!-- Навигация -->
-            <nav class="nav">
+            <a href="./index.html" class="logo">Web<span class="logo-highlight">Studio</span></a>
+            <nav>
                 <ul class="nav-list">
                     <li><a href="./index.html" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Контакты -->
-            <address class="contact-info">
-                <ul class="contact-list">
+            <address class="header-contacts">
+                <ul>
                     <li><a href="mailto:info@webstudio.com" class="contact-link">info@webstudio.com</a></li>
                     <li><a href="tel:+123456789" class="contact-link">+1 234 567 89</a></li>
                 </ul>
@@ -34,13 +33,10 @@
         </div>
     </header>
 
-    <main>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-            <button class="hero-button">Order Service</button>
-        </div>
+        <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
+        <button class="hero-button">Order Service</button>
     </section>
 
     <!-- Features Section -->
@@ -65,77 +61,47 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <h2 class="team-title">Our Team</h2>
-        <div class="team-container">
-            <div class="team-card">
-                <img src="./images/mark-guerrero.jpg" alt="Mark Guerrero - Product Designer" class="team-card-img">
-                <h3 class="team-card-name">Mark Guerrero</h3>
-                <p class="team-card-role">Product Designer</p>
-            </div>
-            <div class="team-card">
-                <img src="./images/tom-ford.jpg" alt="Tom Ford - Frontend Developer" class="team-card-img">
-                <h3 class="team-card-name">Tom Ford</h3>
-                <p class="team-card-role">Frontend Developer</p>
-            </div>
-            <div class="team-card">
-                <img src="./images/camila-garcia.jpg" alt="Camila Garcia - Marketing Specialist" class="team-card-img">
-                <h3 class="team-card-name">Camila Garcia</h3>
-                <p class="team-card-role">Marketing</p>
-            </div>
-            <div class="team-card">
-                <img src="./images/daniel-wilson.jpg" alt="Daniel Wilson - UI Designer" class="team-card-img">
-                <h3 class="team-card-name">Daniel Wilson</h3>
-                <p class="team-card-role">UI Designer</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Portfolio Section -->
-    <section class="portfolio-section">
-        <h2 class="portfolio-title">Our Portfolio</h2>
+    <section class="portfolio-section" id="portfolio">
+        <h2 class="portfolio-title">Our Projects</h2>
         <div class="portfolio-container">
             <div class="project-card">
-                <img src="./images/banking-app.jpg" alt="Banking App Project">
+                <img src="./images/banking-app.jpg" alt="Banking App" width="360">
                 <h3 class="project-card-title">Banking App</h3>
                 <p class="project-card-description">App</p>
             </div>
             <div class="project-card">
-                <img src="./images/cashless-payment.jpg" alt="Cashless Payment Project">
+                <img src="./images/cashless-payment.jpg" alt="Cashless Payment" width="360">
                 <h3 class="project-card-title">Cashless Payment</h3>
                 <p class="project-card-description">Marketing</p>
             </div>
             <div class="project-card">
-                <img src="./images/meditation-app.jpg" alt="Meditation App Project">
+                <img src="./images/meditation-app.jpg" alt="Meditation App" width="360">
                 <h3 class="project-card-title">Meditation App</h3>
                 <p class="project-card-description">App</p>
             </div>
             <div class="project-card">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service Project">
+                <img src="./images/taxi-service.jpg" alt="Taxi Service" width="360">
                 <h3 class="project-card-title">Taxi Service</h3>
                 <p class="project-card-description">Marketing</p>
             </div>
             <div class="project-card">
-                <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations Project">
+                <img src="./images/screen-illustrations.jpg" alt="Screen Illustrations" width="360">
                 <h3 class="project-card-title">Screen Illustrations</h3>
                 <p class="project-card-description">Design</p>
             </div>
             <div class="project-card">
-                <img src="./images/online-courses.jpg" alt="Online Courses Project">
+                <img src="./images/online-courses.jpg" alt="Online Courses" width="360">
                 <h3 class="project-card-title">Online Courses</h3>
                 <p class="project-card-description">Marketing</p>
             </div>
         </div>
     </section>
-    </main>
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <a href="./index.html" class="logo">
-                Web<span class="logo-highlight">Studio</span>
-            </a>
+            <a href="./index.html" class="logo">Web<span class="logo-highlight">Studio</span></a>
             <p class="footer-text">© 2025 WebStudio. All Rights Reserved.</p>
         </div>
     </footer>
